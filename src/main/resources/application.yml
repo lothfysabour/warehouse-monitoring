@@ -1,0 +1,19 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: warehouse-monitoring
+
+sensor-threshold:
+  temperature:
+    port: 3344
+    threshold: 35.0
+  humidity:
+    port: 3355
+    threshold: 50.0
+
+logging:
+  level:
+    root: INFO
+    com.warehousemonitoring: DEBUG
